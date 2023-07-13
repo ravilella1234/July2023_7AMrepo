@@ -17,6 +17,8 @@ public class TC_001 extends BaseTest
 		String url = driver.getCurrentUrl();
 		System.out.println(url);
 		
+		driver.manage().deleteAllCookies();
+		
 		driver.navigate().back();
 		
 		Thread.sleep(4000);
