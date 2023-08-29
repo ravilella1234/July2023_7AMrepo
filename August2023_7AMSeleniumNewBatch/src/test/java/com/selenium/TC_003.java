@@ -1,8 +1,5 @@
 package com.selenium;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-
 public class TC_003 extends BaseTest
 {
 
@@ -10,7 +7,8 @@ public class TC_003 extends BaseTest
 	{
 		init();
 		
-		launch("firefoxbrowser");
+		//LB- 3.141.59 (or)4.11.0 , WDM-5.5.2
+		launch("chromebrowser");
 		
 		navigateUrl("amazonurl");
 		
