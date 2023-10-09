@@ -69,13 +69,13 @@ public class BaseTest
 	
 	public static void launch(String browser)
 	{
-		if(p.getProperty(browser).equalsIgnoreCase("chrome"))
+		if(browser.equalsIgnoreCase("chrome"))
 		{
 			WebDriverManager.chromedriver().setup();
 			//System.setProperty("webdriver.chrome.driver", "C:\\Users\\ravi\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
 			driver = new ChromeDriver();
 		}
-		else if(p.getProperty(browser).equals("firefox"))
+		else if(browser.equals("firefox"))
 		{
 			FirefoxOptions option = new FirefoxOptions();
 			option.setBinary("C:\\Program Files\\Mozilla Firefox\\firefox.exe");
@@ -83,7 +83,7 @@ public class BaseTest
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver(option);
 		}
-		else if(p.getProperty(browser).equals("edge"))
+		else if(browser.equals("edge"))
 		{
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
