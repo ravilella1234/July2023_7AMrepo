@@ -12,7 +12,7 @@ import org.testng.annotations.AfterMethod;
 public class TNG_003 extends BaseTest
 {
 	
-  @BeforeMethod
+  @BeforeMethod(groups = {"regression","sanity"})
   @Parameters("browser")
   public void startProcess(String btype) throws Exception 
   {
@@ -29,7 +29,7 @@ public class TNG_003 extends BaseTest
 		test.log(Status.FAIL, "Navigating to application url : " + childProp.getProperty("amazonurl"));	  
   }
   
-  @Test
+  @Test(groups = {"regression","sanity"})
   public void amazonTest() 
   {
 	  System.out.println("Amazontest");
@@ -43,7 +43,7 @@ public class TNG_003 extends BaseTest
 		test.log(Status.PASS, "Clicked on element by Using locator : " + orProp.getProperty("amazonsearchbutton_xpath"));
   }
 
-  @AfterMethod
+  @AfterMethod(groups = {"regression","sanity"})
   public void endProcess()
   {
 	  System.out.println("end process");
