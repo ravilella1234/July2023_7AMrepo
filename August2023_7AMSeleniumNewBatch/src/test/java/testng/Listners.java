@@ -57,7 +57,7 @@ public class Listners extends BaseTest implements ITestListener
 			
 			Reporter.log("<a href='" + System.getProperty("user.dir")+"//failure//"+filePath+".png" + "'> <img src='" + System.getProperty("user.dir")+"//failure//"+filePath+".png" + "' height='100' width='100'/> </a>");
 			Reporter.log("Test has Failed:" + result.getMethod().getMethodName());
-			//Reporter.log(result.getThrowable().getMessage());
+			Reporter.log(result.getThrowable().getMessage());
 		}
 	}
 
