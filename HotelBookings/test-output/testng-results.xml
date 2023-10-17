@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="4" total="14" passed="10">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="295" started-at="2023-10-17T02:24:32Z" finished-at="2023-10-17T02:24:32Z">
+    <groups>
+    </groups>
+    <test name="Create New Booking Test - pay@hotel" duration-ms="170" started-at="2023-10-17T02:24:32Z" finished-at="2023-10-17T02:24:32Z">
+      <class name="testcases.CommunicationManagement">
+        <test-method status="PASS" signature="checkMailConfirmation(org.testng.ITestContext)[pri:0, instance:testcases.CommunicationManagement@51081592]" name="checkMailConfirmation" duration-ms="19" started-at="2023-10-17T02:24:32Z" finished-at="2023-10-17T02:24:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4f970963]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkMailConfirmation -->
+        <test-method status="PASS" signature="checkMobileConfirmation(org.testng.ITestContext)[pri:0, instance:testcases.CommunicationManagement@51081592]" name="checkMobileConfirmation" duration-ms="10" started-at="2023-10-17T02:24:32Z" finished-at="2023-10-17T02:24:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4f970963]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkMobileConfirmation -->
+      </class> <!-- testcases.CommunicationManagement -->
+      <class name="testcases.BookingManagement">
+        <test-method status="PASS" signature="createBooking()[pri:0, instance:testcases.BookingManagement@5034c75a]" name="createBooking" duration-ms="15" started-at="2023-10-17T02:24:32Z" finished-at="2023-10-17T02:24:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createBooking -->
+      </class> <!-- testcases.BookingManagement -->
+      <class name="testcases.PaymentManagement">
+        <test-method status="PASS" signature="applyDiscount()[pri:0, instance:testcases.PaymentManagement@396a51ab]" name="applyDiscount" duration-ms="6" started-at="2023-10-17T02:24:32Z" finished-at="2023-10-17T02:24:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applyDiscount -->
+        <test-method status="PASS" signature="makePayment(java.lang.String, org.testng.ITestContext)[pri:0, instance:testcases.PaymentManagement@396a51ab]" name="makePayment" duration-ms="12" started-at="2023-10-17T02:24:32Z" finished-at="2023-10-17T02:24:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[pay@hotel]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@4f970963]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- makePayment -->
+      </class> <!-- testcases.PaymentManagement -->
+    </test> <!-- Create New Booking Test - pay@hotel -->
+    <test name="Create New Booking Test - pay@online" duration-ms="47" started-at="2023-10-17T02:24:32Z" finished-at="2023-10-17T02:24:32Z">
+      <class name="testcases.CommunicationManagement">
+        <test-method status="PASS" signature="checkMailConfirmation(org.testng.ITestContext)[pri:0, instance:testcases.CommunicationManagement@14acaea5]" name="checkMailConfirmation" duration-ms="1" started-at="2023-10-17T02:24:32Z" finished-at="2023-10-17T02:24:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3a883ce7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkMailConfirmation -->
+        <test-method status="PASS" signature="checkMobileConfirmation(org.testng.ITestContext)[pri:0, instance:testcases.CommunicationManagement@14acaea5]" name="checkMobileConfirmation" duration-ms="3" started-at="2023-10-17T02:24:32Z" finished-at="2023-10-17T02:24:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3a883ce7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkMobileConfirmation -->
+      </class> <!-- testcases.CommunicationManagement -->
+      <class name="testcases.BookingManagement">
+        <test-method status="PASS" signature="createBooking()[pri:0, instance:testcases.BookingManagement@4c70fda8]" name="createBooking" duration-ms="2" started-at="2023-10-17T02:24:32Z" finished-at="2023-10-17T02:24:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createBooking -->
+      </class> <!-- testcases.BookingManagement -->
+      <class name="testcases.PaymentManagement">
+        <test-method status="PASS" signature="applyDiscount()[pri:0, instance:testcases.PaymentManagement@224edc67]" name="applyDiscount" duration-ms="1" started-at="2023-10-17T02:24:32Z" finished-at="2023-10-17T02:24:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- applyDiscount -->
+        <test-method status="PASS" signature="makePayment(java.lang.String, org.testng.ITestContext)[pri:0, instance:testcases.PaymentManagement@224edc67]" name="makePayment" duration-ms="7" started-at="2023-10-17T02:24:32Z" finished-at="2023-10-17T02:24:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[pay@online]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@3a883ce7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- makePayment -->
+      </class> <!-- testcases.PaymentManagement -->
+    </test> <!-- Create New Booking Test - pay@online -->
+  </suite> <!-- Suite -->
+</testng-results>
