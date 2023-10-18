@@ -1,28 +1,40 @@
 package com.selenium;
 
+import java.io.File;
+import java.util.Date;
+
 import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class ExtentManager extends BaseTest
 {
-	public static ExtentHtmlReporter htmlReport;
+	public static ExtentSparkReporter sparkReport;
 	public static ExtentReports report;
 	
 	public static ExtentReports getInstance()
 	{
-		if(htmlReport==null)
+		if(report==null)
 		{
-			htmlReport = new ExtentHtmlReporter(projectPath+"//reports//report.html");
-			htmlReport.config().setDocumentTitle("Automation Report");
-			htmlReport.config().setReportName("Functional Report");
-			htmlReport.config().setTheme(Theme.STANDARD);
-			
 			report = new ExtentReports();
-			report.attachReporter(htmlReport);
-			report.setSystemInfo("OS", "Windows");
-			report.setSystemInfo("Tester Name", "Ravi");
-			report.setSystemInfo("Browser", "chrome");
+			
+			//init the report folder
+			Date d = new Date();
+			String reportFolder = d.toString().replace(':', '_')+"//screenshots";
+			String screenshotFolderPath = System.getProperty("user.dir")+"//reports//"+reportFolder;
+			System.out.println(screenshotFolderPath);
+			
+			String reportFolderPath = System.getProperty("user.dir")+"//reports//"+d.toString().replace(':', '_');
+			
+			File f = new File(screenshotFolderPath); 
+			f.mkdirs(); // creates dynamic report folder name + screenshot 
+			
+			sparkReport= new ExtentSparkReporter(reportFolderPath);
+			sparkReport.config().setReportName("Production Regression Testing");
+			sparkReport.config().setDocumentTitle("Automation Reports");
+			sparkReport.config().setTheme(Theme.STANDARD);
+			
+			report.attachReporter(sparkReport);
 		}
 		
 		return report;

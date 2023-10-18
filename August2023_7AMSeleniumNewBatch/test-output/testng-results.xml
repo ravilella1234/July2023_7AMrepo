@@ -1,331 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="2" failed="1" ignored="0" total="3" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
-    <line>
-      <![CDATA[Test Started Running :amazonTest]]>
-    </line>
-    <line>
-      <![CDATA[Retrying test amazonTest with status FAILURE for the 1 time(s).]]>
-    </line>
-    <line>
-      <![CDATA[Test is skipped :amazonTest]]>
-    </line>
-    <line>
-      <![CDATA[Test Started Running :amazonTest]]>
-    </line>
-    <line>
-      <![CDATA[Retrying test amazonTest with status FAILURE for the 2 time(s).]]>
-    </line>
-    <line>
-      <![CDATA[Test is skipped :amazonTest]]>
-    </line>
-    <line>
-      <![CDATA[Test Started Running :amazonTest]]>
-    </line>
-    <line>
-      <![CDATA[<a href='D:\April2022WD\August2023_7AMSeleniumNewBatch//failure//Fri_Oct_13_07_48_47_IST_2023.png'> <img src='D:\April2022WD\August2023_7AMSeleniumNewBatch//failure//Fri_Oct_13_07_48_47_IST_2023.png' height='100' width='100'/> </a>]]>
-    </line>
-    <line>
-      <![CDATA[Test has Failed:amazonTest]]>
-    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="126144" started-at="2023-10-13T02:18:47Z" finished-at="2023-10-13T02:20:53Z">
+  <suite name="Suite" duration-ms="2064" started-at="2023-10-18T02:19:44Z" finished-at="2023-10-18T02:19:46Z">
     <groups>
-      <group name="regression">
-        <method signature="TNG_003.amazonTest()[pri:0, instance:testng.TNG_003@3cef309d]" name="amazonTest" class="testng.TNG_003"/>
-      </group> <!-- regression -->
-      <group name="sanity">
-        <method signature="TNG_003.amazonTest()[pri:0, instance:testng.TNG_003@3cef309d]" name="amazonTest" class="testng.TNG_003"/>
-      </group> <!-- sanity -->
     </groups>
-    <test name="Test" duration-ms="126144" started-at="2023-10-13T02:18:47Z" finished-at="2023-10-13T02:20:53Z">
-      <class name="testng.TNG_003">
-        <test-method status="PASS" signature="startProcess(java.lang.String)[pri:0, instance:testng.TNG_003@3cef309d]" name="startProcess" is-config="true" duration-ms="11230" started-at="2023-10-13T02:18:47Z" finished-at="2023-10-13T02:18:58Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+    <test name="LoginTest" duration-ms="1738" started-at="2023-10-18T02:19:44Z" finished-at="2023-10-18T02:19:46Z">
+      <class name="testng.LoginTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:testng.LoginTest@6fc6f14e]" name="init" is-config="true" duration-ms="617" started-at="2023-10-18T02:19:44Z" finished-at="2023-10-18T02:19:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startProcess -->
-        <test-method status="SKIP" signature="amazonTest()[pri:0, instance:testng.TNG_003@3cef309d]" name="amazonTest" duration-ms="31240" started-at="2023-10-13T02:18:58Z" finished-at="2023-10-13T02:19:30Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for presence of element located by: By.name: field-keyword (tried for 30 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.name: field-keyword (tried for 30 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-at com.selenium.BaseTest.isElementPresent(BaseTest.java:159)
-at com.selenium.BaseTest.getElement(BaseTest.java:131)
-at com.selenium.BaseTest.typeText(BaseTest.java:116)
-at testng.TNG_003.amazonTest(TNG_003.java:39)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='field-keyword']"}
-  (Session info: chrome=117.0.5938.134)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [512129cf4d633ecc7adbe5a7f234e423, findElement {using=name, value=field-keyword}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.134, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\ravi\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65144}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65144/devtoo..., se:cdpVersion: 117.0.5938.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 512129cf4d633ecc7adbe5a7f234e423
-at sun.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
-... 29 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-            <line>
-              <![CDATA[Test Started Running :amazonTest]]>
-            </line>
-            <line>
-              <![CDATA[Retrying test amazonTest with status FAILURE for the 1 time(s).]]>
-            </line>
-            <line>
-              <![CDATA[Test is skipped :amazonTest]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- amazonTest -->
-        <test-method status="PASS" signature="endProcess()[pri:0, instance:testng.TNG_003@3cef309d]" name="endProcess" is-config="true" duration-ms="3232" started-at="2023-10-13T02:19:30Z" finished-at="2023-10-13T02:19:33Z">
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:testng.LoginTest@6fc6f14e]" name="loginTest" duration-ms="29" started-at="2023-10-18T02:19:45Z" finished-at="2023-10-18T02:19:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- endProcess -->
-        <test-method status="PASS" signature="startProcess(java.lang.String)[pri:0, instance:testng.TNG_003@3cef309d]" name="startProcess" is-config="true" duration-ms="5620" started-at="2023-10-13T02:19:33Z" finished-at="2023-10-13T02:19:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:testng.LoginTest@6fc6f14e]" name="quit" is-config="true" duration-ms="1026" started-at="2023-10-18T02:19:45Z" finished-at="2023-10-18T02:19:46Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startProcess -->
-        <test-method status="SKIP" signature="amazonTest()[pri:0, instance:testng.TNG_003@3cef309d]" name="amazonTest" duration-ms="32279" started-at="2023-10-13T02:19:39Z" finished-at="2023-10-13T02:20:11Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for presence of element located by: By.name: field-keyword (tried for 30 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.name: field-keyword (tried for 30 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-at com.selenium.BaseTest.isElementPresent(BaseTest.java:159)
-at com.selenium.BaseTest.getElement(BaseTest.java:131)
-at com.selenium.BaseTest.typeText(BaseTest.java:116)
-at testng.TNG_003.amazonTest(TNG_003.java:39)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='field-keyword']"}
-  (Session info: chrome=117.0.5938.134)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a47caeb3c39e3ee327cf11281aa35342, findElement {using=name, value=field-keyword}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.134, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\ravi\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65248}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65248/devtoo..., se:cdpVersion: 117.0.5938.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a47caeb3c39e3ee327cf11281aa35342
-at sun.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
-... 29 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-            <line>
-              <![CDATA[Test Started Running :amazonTest]]>
-            </line>
-            <line>
-              <![CDATA[Retrying test amazonTest with status FAILURE for the 2 time(s).]]>
-            </line>
-            <line>
-              <![CDATA[Test is skipped :amazonTest]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- amazonTest -->
-        <test-method status="PASS" signature="endProcess()[pri:0, instance:testng.TNG_003@3cef309d]" name="endProcess" is-config="true" duration-ms="1587" started-at="2023-10-13T02:20:11Z" finished-at="2023-10-13T02:20:12Z">
+        </test-method> <!-- quit -->
+      </class> <!-- testng.LoginTest -->
+    </test> <!-- LoginTest -->
+    <test name="RegTest" duration-ms="227" started-at="2023-10-18T02:19:46Z" finished-at="2023-10-18T02:19:46Z">
+      <class name="testng.RegTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:testng.RegTest@61f8bee4]" name="init" is-config="true" duration-ms="1" started-at="2023-10-18T02:19:46Z" finished-at="2023-10-18T02:19:46Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- endProcess -->
-        <test-method status="PASS" signature="startProcess(java.lang.String)[pri:0, instance:testng.TNG_003@3cef309d]" name="startProcess" is-config="true" duration-ms="7289" started-at="2023-10-13T02:20:12Z" finished-at="2023-10-13T02:20:20Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="regTest()[pri:0, instance:testng.RegTest@61f8bee4]" name="regTest" duration-ms="16" started-at="2023-10-18T02:19:46Z" finished-at="2023-10-18T02:19:46Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startProcess -->
-        <test-method status="FAIL" signature="amazonTest()[pri:0, instance:testng.TNG_003@3cef309d]" name="amazonTest" duration-ms="31457" started-at="2023-10-13T02:20:20Z" finished-at="2023-10-13T02:20:51Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for presence of element located by: By.name: field-keyword (tried for 30 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.name: field-keyword (tried for 30 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-at com.selenium.BaseTest.isElementPresent(BaseTest.java:159)
-at com.selenium.BaseTest.getElement(BaseTest.java:131)
-at com.selenium.BaseTest.typeText(BaseTest.java:116)
-at testng.TNG_003.amazonTest(TNG_003.java:39)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='field-keyword']"}
-  (Session info: chrome=117.0.5938.134)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_321'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4d9bf42442bbd9d293d77f47a5541ff6, findElement {using=name, value=field-keyword}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.134, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\ravi\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65371}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65371/devtoo..., se:cdpVersion: 117.0.5938.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4d9bf42442bbd9d293d77f47a5541ff6
-at sun.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
-... 29 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-            <line>
-              <![CDATA[Test Started Running :amazonTest]]>
-            </line>
-            <line>
-              <![CDATA[<a href='D:\April2022WD\August2023_7AMSeleniumNewBatch//failure//Fri_Oct_13_07_48_47_IST_2023.png'> <img src='D:\April2022WD\August2023_7AMSeleniumNewBatch//failure//Fri_Oct_13_07_48_47_IST_2023.png' height='100' width='100'/> </a>]]>
-            </line>
-            <line>
-              <![CDATA[Test has Failed:amazonTest]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- amazonTest -->
-        <test-method status="PASS" signature="endProcess()[pri:0, instance:testng.TNG_003@3cef309d]" name="endProcess" is-config="true" duration-ms="1296" started-at="2023-10-13T02:20:52Z" finished-at="2023-10-13T02:20:53Z">
+        </test-method> <!-- regTest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:testng.RegTest@61f8bee4]" name="quit" is-config="true" duration-ms="191" started-at="2023-10-18T02:19:46Z" finished-at="2023-10-18T02:19:46Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- endProcess -->
-      </class> <!-- testng.TNG_003 -->
-    </test> <!-- Test -->
+        </test-method> <!-- quit -->
+      </class> <!-- testng.RegTest -->
+    </test> <!-- RegTest -->
   </suite> <!-- Suite -->
 </testng-results>
