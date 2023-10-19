@@ -1,41 +1,169 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="2064" started-at="2023-10-18T02:19:44Z" finished-at="2023-10-18T02:19:46Z">
+  <suite name="Default suite" duration-ms="158" started-at="2023-10-19T02:11:43Z" finished-at="2023-10-19T02:11:43Z">
     <groups>
     </groups>
-    <test name="LoginTest" duration-ms="1738" started-at="2023-10-18T02:19:44Z" finished-at="2023-10-18T02:19:46Z">
-      <class name="testng.LoginTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:testng.LoginTest@6fc6f14e]" name="init" is-config="true" duration-ms="617" started-at="2023-10-18T02:19:44Z" finished-at="2023-10-18T02:19:45Z">
+    <test name="Default test" duration-ms="158" started-at="2023-10-19T02:11:43Z" finished-at="2023-10-19T02:11:43Z">
+      <class name="testng.CreateUser">
+        <test-method status="PASS" signature="createUser(java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:testng.CreateUser@a67c67e]" name="createUser" duration-ms="20" started-at="2023-10-19T02:11:43Z" data-provider="getData" finished-at="2023-10-19T02:11:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[email1@domain.com]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="loginTest()[pri:0, instance:testng.LoginTest@6fc6f14e]" name="loginTest" duration-ms="29" started-at="2023-10-18T02:19:45Z" finished-at="2023-10-18T02:19:45Z">
+        </test-method> <!-- createUser -->
+        <test-method status="PASS" signature="createUser(java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:testng.CreateUser@a67c67e]" name="createUser" duration-ms="5" started-at="2023-10-19T02:11:43Z" data-provider="getData" finished-at="2023-10-19T02:11:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mozilla]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SuperAdmin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[11111]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[email2@domain.com]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:testng.LoginTest@6fc6f14e]" name="quit" is-config="true" duration-ms="1026" started-at="2023-10-18T02:19:45Z" finished-at="2023-10-18T02:19:46Z">
+        </test-method> <!-- createUser -->
+        <test-method status="PASS" signature="createUser(java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:testng.CreateUser@a67c67e]" name="createUser" duration-ms="2" started-at="2023-10-19T02:11:43Z" data-provider="getData" finished-at="2023-10-19T02:11:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IE]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[User]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[99999]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[email3@domain.com]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- quit -->
-      </class> <!-- testng.LoginTest -->
-    </test> <!-- LoginTest -->
-    <test name="RegTest" duration-ms="227" started-at="2023-10-18T02:19:46Z" finished-at="2023-10-18T02:19:46Z">
-      <class name="testng.RegTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:testng.RegTest@61f8bee4]" name="init" is-config="true" duration-ms="1" started-at="2023-10-18T02:19:46Z" finished-at="2023-10-18T02:19:46Z">
+        </test-method> <!-- createUser -->
+        <test-method status="PASS" signature="deleteUser(java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:testng.CreateUser@a67c67e]" name="deleteUser" duration-ms="3" started-at="2023-10-19T02:11:43Z" data-provider="getData" finished-at="2023-10-19T02:11:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[email1@domain.com]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="regTest()[pri:0, instance:testng.RegTest@61f8bee4]" name="regTest" duration-ms="16" started-at="2023-10-18T02:19:46Z" finished-at="2023-10-18T02:19:46Z">
+        </test-method> <!-- deleteUser -->
+        <test-method status="PASS" signature="deleteUser(java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:testng.CreateUser@a67c67e]" name="deleteUser" duration-ms="2" started-at="2023-10-19T02:11:43Z" data-provider="getData" finished-at="2023-10-19T02:11:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mozilla]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SuperAdmin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[11111]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[email2@domain.com]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- regTest -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:testng.RegTest@61f8bee4]" name="quit" is-config="true" duration-ms="191" started-at="2023-10-18T02:19:46Z" finished-at="2023-10-18T02:19:46Z">
+        </test-method> <!-- deleteUser -->
+        <test-method status="PASS" signature="deleteUser(java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:testng.CreateUser@a67c67e]" name="deleteUser" duration-ms="2" started-at="2023-10-19T02:11:43Z" data-provider="getData" finished-at="2023-10-19T02:11:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IE]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[User]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[99999]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[email3@domain.com]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- quit -->
-      </class> <!-- testng.RegTest -->
-    </test> <!-- RegTest -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- deleteUser -->
+      </class> <!-- testng.CreateUser -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
